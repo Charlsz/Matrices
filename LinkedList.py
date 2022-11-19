@@ -1,3 +1,4 @@
+from re import *
 from Nodo import Nodo
 
 class LinkedList:
@@ -5,14 +6,18 @@ class LinkedList:
         self.PTR = None
         self.ULT = None
 
-    def AddNode(self,data):
-        P = Nodo(data)
-        if (self.PTR == None):
-            self.PTR = P
-            self.ULT = P 
-        else:
-            self.ULT.next = P
-            self.ULT = P             
+    def AddNode(self):
+        file = open('Matriz21x21.txt')
+        while(True):
+            linea = file.readline
+            ln = linea.split(' ')
+            P = Nodo()
+            if (self.PTR == None):
+                self.PTR = P
+                self.ULT = P 
+            else:
+                self.ULT.next = P
+                self.ULT = P             
 
     def Recorrido(self):
         P = self.PTR
