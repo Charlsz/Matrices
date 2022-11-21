@@ -24,6 +24,24 @@ class LinkedList:
             if not linea:
                 break
         file.close()
+        
+    def AddNode2(self):
+        """agrega la fila de la matriz a un nodo"""
+        file = open('Matriz30x40.txt')
+        while(True):
+            """leer linea por linea y agregar esos valores al nodo"""
+            linea = file.readline()
+            ln2 = linea.split(" ")
+            P = Nodo(",".join(ln2))
+            if (self.PTR == None):
+                self.PTR = P
+                self.ULT = P 
+            else:
+                self.ULT.next = P
+                self.ULT = P
+            if not linea:
+                break
+        file.close()
     
     def __repr__(self):
         respuesta = ""
@@ -33,3 +51,9 @@ class LinkedList:
             P = P.next
         respuesta = respuesta + "Final Matriz"
         return respuesta
+    
+    def sumar_matrices(lista,lista2):
+        pass
+    
+    def restar_matrices():
+        pass
