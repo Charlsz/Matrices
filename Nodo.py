@@ -3,8 +3,6 @@ class Nodo:
         self.data = data
         self.next = None
 
-    def addInfo(self,data):
-        self.info.append(data)
     
     def __repr__(self):
         return str(self.data)
