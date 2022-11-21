@@ -51,9 +51,4 @@ class LinkedList:
             P = P.next
         respuesta = respuesta + "Final Matriz"
         return respuesta
-    
-    def sumar_matrices(lista,lista2):
-        pass
-    
-    def restar_matrices():
-        pass
+
