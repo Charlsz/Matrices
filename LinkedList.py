@@ -82,7 +82,6 @@ class LinkedList:
         while P != None and Q != None:
             P2 = P.numeros.PTR
             Q2 = Q.numeros.PTR
-            print("Aqui estamos:",P2)
             l = []
             while P2 != None and Q2 != None:
                 
@@ -93,20 +92,27 @@ class LinkedList:
                 P2 = P2.next
                 Q2 = Q2.next
             print(l)
+            #file.write(l)
             P = P.next
             Q = Q.next
 
     def resta(self,lista2):
         P = self.PTR
         Q = lista2.PTR
-        while P != None or Q != None:
+        while P != None and Q != None:
             P2 = P.numeros.PTR
             Q2 = Q.numeros.PTR
-            while P2 != None or Q2 != None:
+            l = []
+            while P2 != None and Q2 != None:
+                
                 if(P2.data!= None and Q2.data!=None):
+                    #print("Aqui estamos:",P2.data,"y Q es",Q2.data)
                     P2.data = int(P2.data) - int(Q2.data)
+                    l.append(P2.data)
                 P2 = P2.next
                 Q2 = Q2.next
+            print(l)
+            #file.write(l)
             P = P.next
             Q = Q.next
 
@@ -117,4 +123,3 @@ class LinkedList:
             texto = texto + str(P.data) + " -> "
             P = P.next
         return texto
-
