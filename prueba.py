@@ -14,8 +14,10 @@ else:
         lista.resta(lista2)
 """
 
+#las dos funciones corren perfectamente y cumplen lo que pide
+#lista.suma(lista2)
 
-lista.resta(lista2)
+#lista.resta(lista2)
 
 
 
