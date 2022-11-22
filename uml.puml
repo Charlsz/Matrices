@@ -1,0 +1,26 @@
+@startuml
+
+LinkedList -> Nodo
+LinkedList -> NodoFila
+NodoFila -> Nodo
+
+Class Nodo{
+__init__
+__repr__
+}
+
+Class NodoFila{
+__init__
+__repr__
+}
+
+Class LinkedList{
+__init__
+addNodeFila()
+AddNode()
+AddNode2()
+suma(self,lista2)
+resta(self,lista2)
+_repr_
+}
+@enduml
