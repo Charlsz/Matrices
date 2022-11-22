@@ -5,14 +5,11 @@ lista.AddNode()
 lista2 = LinkedList()
 lista2.AddNode2()
 
+lista.suma(lista2)
 
-def recorrido(self):
-    P = self.PTR
-    while(P != None):
-        print(P.data, end="->")
-        P = P.next
-    print("None")
-
+print(lista)
+print(" ")
+print(lista2)
 
 """
 print("La primera matriz es: ")
