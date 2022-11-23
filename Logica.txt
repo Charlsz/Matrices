@@ -40,11 +40,24 @@ supongamos que tenemos otra matriz 3x3 igual
 
 queremos sumar esas matrices, por lo menos la primera fila:
 ln[0]+ln2[0] = 2
-ln[1]+ln2[2] = 4
-ln[1]+ln2[2] = 6
+ln[1]+ln2[1] = 4
+ln[2]+ln2[2] = 6
 
 esos valores se van guardando en una variable que hara append a una lista quedando:
                [1,2,3] + [1,2,3] = [2,4,6]
             esa seria la primera fila de nuestra matriz resultante
 
+-------------------------------------------------------------------------------------------------------------------------
+
+la idea para interactuar por lo menos para resta y suma de matrices es la siguiente:
+trabajando con la idea del 3x3
+               [1,2,3]    [4,5,6]    [7,8,9]
+            1 vendria siendo ln[0], 2 ln[1] y 3 ln[2]
+
+supongamos que tenemos otra matriz 3x3 igual
+               [1,2,3]    [4,5,6]    [7,8,9]
+            1 vendria siendo ln2[0], 2 ln2[1] y 3 ln2[2]
+
+queremos multiplicar estas matrices, con la primera fila seria:
+(ln[0] x ln2[0]) + (ln[0])
             

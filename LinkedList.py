@@ -4,6 +4,7 @@ class Nodo:
         self.data = data
         self.next = None
         self.numeros = LinkedList()
+        self.numerosr = LinkedList()
 
     
     def __repr__(self):
@@ -86,8 +87,36 @@ class LinkedList:
             while P2 != None and Q2 != None:
                 
                 if(P2.data!= None and Q2.data!=None):
-                    #print("Aqui estamos:",P2.data,"y Q es",Q2.data)
                     P2.data = int(P2.data) + int(Q2.data)
+                    l.append(P2.data)
+                    """
+                    R = Nodo(P2.data)
+                    if (R.numerosr.PTR == None):
+                        R.numerosr.PTR = R
+                        R.numerosr.ULT = R 
+                    else:
+                        R.numerosr.ULT.next = R
+                        R.numerosr.ULT = R    
+                    """
+                #print(R)
+                P2 = P2.next
+                Q2 = Q2.next
+            print(l)
+            P = P.next
+            Q = Q.next
+
+    def resta(self,lista2):
+        P = self.PTR
+        Q = lista2.PTR
+        while P != None and Q != None:
+            P2 = P.numeros.PTR
+            Q2 = Q.numeros.PTR
+            l = []
+            while P2 != None and Q2 != None:
+                
+                if(P2.data!= None and Q2.data!=None):
+                    #print("Aqui estamos:",P2.data,"y Q es",Q2.data)
+                    P2.data = int(P2.data) - int(Q2.data)
                     l.append(P2.data)
                 P2 = P2.next
                 Q2 = Q2.next
@@ -96,7 +125,7 @@ class LinkedList:
             P = P.next
             Q = Q.next
 
-    def resta(self,lista2):
+    def multiplicacion(self,lista2):
         P = self.PTR
         Q = lista2.PTR
         while P != None and Q != None:
